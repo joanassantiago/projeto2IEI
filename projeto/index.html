@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joana Santiago (119705), Dinis Bernardo (120420)">  
+    <title>Projeto IEI - Eletroencefalografia e Eye Tracking</title>
+    <link rel="icon" type="image/x-icon" href="images/titleicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="index.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  </head>
+  <body class="style margin-topbot">
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">EEG & ET</a>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+              <div class="vr" style="color: white"></div>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#a9a9a9; margin-left: 10px;" href="about.html">About</a>
+              </li>
+              <li class="nav-item" style="padding-left: 92%">
+                <button class="navbar-toggler-edit" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </li>
+            </ul>
+          </div>      
+          </div>
+        </div>
+      </nav>
+    
+      <nav class="navbar fixed-bottom bg-body-tertiary">
+        <div class="container">
+          <a href='https://www.ua.pt/pt/deti' class="col-md-4 mb-0 text-body-secondary text-as-link">© 2024 UAveiro - Deti</a>
+    
+          <a href="https:www.ua.pt" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img  style="width: 10%;"   src="images/uaWHITE.png">
+          </a>
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="https://github.com/oGaijo" class="nav-link px-2 text-body-secondary">Dinis</a></li>
+            <li class="nav-item"><a class="nav-link px-2 text-body-secondary">|</a></li>
+            <li class="nav-item"><a href="https://github.com/joanassantiago" class="nav-link px-2 text-body-secondary">Joana</a></li>
+          </ul>
+        </div>
+      </nav>
+      </header>
+
+  <main data-bs-theme="dark" style="margin-bottom: 100px;">
+  <div class="offcanvas offcanvas-end text-bg-dark navbar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-body w-100">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eletroencefalografia.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eletroencefalografia</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eletroencefalografia.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#conceito">Conceito</a></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#principios_de_avaliacao">Principios de avaliação</a></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#uso_medico">Uso médico</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eyetracking.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eye Tracking</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eyetracking.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eyetracking.html#conceito">Conceito</a></li>
+            <li><a class="dropdown-item" href="eyetracking.html#aplicacoes_do_eye_tracking">Aplicações do ET</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eeg&et.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">EEG & ET</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eeg&et.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eeg&et.html#aplicacoes_da_eeg_e_et">Aplicações da EEG e ET</a></li>
+            <li><a class="dropdown-item" href="eeg&et.html#viralizacao_desta_tecnologia_nos_media">Viralização desta tecnologia nos media</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="conclusoes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conclusões</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="conclusoes.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="conclusoes.html#resultados">Resultados</a></li>
+            <li><a class="dropdown-item" href="conclusoes.html#analise">Análise</a></li>
+            <li><a class="dropdown-item" href="conclusoes.html#conclusoes">Conclusões</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+ 
+            
+  
+  <div class="container">        
+    <div class="row"style="width: 30%; margin-left: 35%; height:">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <br>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="20000">
+            <img src="images/eeg2.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="images/et.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/game.png" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container body-content">
+    <br>
+    <h1 class="title">Eletroencefalografia & Eye Tracking</h1>
+    <hr>
+    <p align="justify"  class="text">A combinação da eletroencefalografia (EEG) e do eye tracking (ET) tem diversas aplicações bastante interessantes e úteis nos jogos, que podem nos ajudar bastante a ter uma experiência única a que não estamos habituados. Uma equipa da universidade de Ben-Gurion no Israel, propôs serem usadas estas tecnologias para aumentar a taxa de envolvimento de um jogador com
+      um videojogo, pois existem vários aspetos que o podem irritar e fazer com que não queira continuar a jogar,como oponentes demasiado fortes, que são um fator desmotivante, ou pelo contrário, oponentes demasiado fracos, que tornam a experiência repetitiva e aborrecida sem necessidade de pensamento estratégico.
+      Para isso, através da mistura entre EEG e ET, pode ser feita uma análise dos comportamentos do jogador e do seu estado mental enquanto está envolvido num jogo para que o jogo se modifique e altere a dificuldade ou outros aspetos e torne a experiência mais divertida e viciante.
+      Após alguns testes, a maioria dos jogadores admitiu preferir jogar em ambientes regulados para si do que um jogo constantemente muito desafiante ou muito fácil.
+    </p>
+  </div>
+
+
+  <div style="text-align: center;" class="bottom">
+    <a href="transition.html">
+      <button type="button" class="btn btn-dark">Saber mais...</button>
+    </a>
+  </div>
+
+  </body>
+</html>

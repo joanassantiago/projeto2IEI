@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joana Santiago (119705), Dinis Bernardo (120420)">  
+    <title>EEG & ET</title>
+    <link rel="icon" type="image/x-icon" href="images/titleicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/eeg&et.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  </head>
+  <body class="style margin-topbot">
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">EEG & ET</a>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+              <div class="vr" style="color: white"></div>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#a9a9a9; margin-left: 10px;" href="about.html">About</a>
+              </li>
+              <li class="nav-item" style="padding-left: 92%">
+                <button class="navbar-toggler-edit" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </li>
+            </ul>
+          </div>      
+          </div>
+        </div>
+      </nav>
+    
+      <nav class="navbar fixed-bottom bg-body-tertiary">
+        <div class="container">
+          <a href='https://www.ua.pt/pt/deti' class="col-md-4 mb-0 text-body-secondary text-as-link">© 2024 UAveiro - Deti</a>
+    
+          <a href="https:www.ua.pt" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img  style="width: 10%;"   src="images/uaWHITE.png">
+          </a>
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="https://github.com/oGaijo" class="nav-link px-2 text-body-secondary">Dinis</a></li>
+            <li class="nav-item"><a class="nav-link px-2 text-body-secondary">|</a></li>
+            <li class="nav-item"><a href="https://github.com/joanassantiago" class="nav-link px-2 text-body-secondary">Joana</a></li>
+          </ul>
+        </div>
+      </nav>
+      </header>
+
+  <main data-bs-theme="dark" style="margin-bottom: 100px;">
+  <div class="offcanvas offcanvas-end text-bg-dark navbar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-body w-100">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eletroencefalografia.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eletroencefalografia</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eletroencefalografia.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#conceito">Conceito</a></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#principios_de_avaliacao">Principios de avaliação</a></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#uso_medico">Uso médico</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eyetracking.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eye Tracking</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eyetracking.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eyetracking.html#conceito">Conceito</a></li>
+            <li><a class="dropdown-item" href="eyetracking.html#aplicacoes_do_eye_tracking">Aplicações do ET</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eeg&et.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">EEG & ET</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eeg&et.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eeg&et.html#aplicacoes_da_eeg_e_et">Aplicações da EEG e ET</a></li>
+            <li><a class="dropdown-item" href="eeg&et.html#viralizacao_desta_tecnologia_nos_media">Viralização desta tecnologia nos media</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="conclusoes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conclusões</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="conclusoes.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="conclusoes.html#resultados">Resultados</a></li>
+            <li><a class="dropdown-item" href="conclusoes.html#analise">Análise</a></li>
+            <li><a class="dropdown-item" href="conclusoes.html#conclusoes">Conclusões</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container body-content">
+    <br>
+    <h1 class="title">Eletroencefalografia junto da tecnologia de Eye Tracking (EEG & ET)</h1>
+    <hr>
+    <ul>
+    <br>
+    <li><h3 class="subtitle marginnavbar" id="aplicacoes_da_eeg_e_et"><i class="fa-solid fa-angles-right"></i> Aplicações da EEG e ET
+        nos videojogos</h3></li>
+      <p align="justify" class="text">A combinação do EEG e do ET tem diversas aplicações bastante interessantes
+        e úteis nos jogos, que podem nos ajudar bastante a ter uma experiência
+        única a que não estamos habituados. <br>
+      </p>
+      <ul>
+        <li><b>Adaptação da Dificuldade do Jogo:</b> A análise da atividade cerebral pode avaliar o nível de atenção do
+            jogador. Se o jogador não estiver a gostar do jogo, o sistema pode ajustar a dificuldade do jogo para que o jogador se entretenha mais.
+        </li>
+        <li><b>Feedback Emocional em Tempo Real:</b> A EEG pode ser utilizada para detetar emoções do jogador, como o
+          tédio, a excitação ou a tristeza. Essa informação é usada para ajustar
+          elementos do jogo, como a trilha sonora, iluminação e enredo, para
+          melhorar a experiência do jogador.
+        </li>
+        <li><b>Controle por pensamento:</b> Visto que a EEG permite a exploração do controle por pensamento,
+          pode assim adicionar certos comandos através dos pensamentos do
+          jogador, o que pode ser bastante útil para jogadores com modalidade
+          reduzida.
+        </li>
+        <li><b>Análise da Atenção Visual:</b> O ET, neste caso, é utilizado para entender para onde o jogador
+          está a olhar durante o jogo. Essa informação pode ser utilizada, por
+          exemplo, para controlar a direção em que o personagem do jogo vai,
+          ou até para otimizar a renderização gráfica na área em que o jogador
+          esta a observar.
+        </li>
+        <li><b>Personalização da Narrativa:</b> Através das reações emocionais e níveis de engajamento, o jogo pode
+          adaptar a narrativa ao que o jogador prefere e ajudar a determinar
+          os elementos da história que mais lhe interessam.
+        </li>
+
+        <li><b>Avaliação da Experiência do Utilizador:</b> A combinação do EEG e ET pode ser utilizada para avaliar a experi
+          ência do jogador em tempo real. Através da avaliação, os desenvolvedores dos jogos são capazes de
+          perceber as áreas do jogo que são mais cativantes e as que precisam
+          de melhorias.
+        </li>
+
+        <li><b>Prevenção de Fadiga:</b> A monitorização da atividade cerebral poderá ajudar a detetar problemas
+          de fadiga, fazendo assim com que o jogo responda de maneira
+          a reduzir a intensidade do estímulo ou sugerindo pausas para evitar
+          a exaustão.
+        </li>
+
+        <li><b>Treino Mental:</b> Em conjunto com jogos, a EEG pode ser utilizada para melhorar a
+          concentração, a memória e capacidades.
+        </li>
+      </ul>
+      <br>
+      <p>Uma equipa da universidade de Ben-Gurion no Israel, propôs serem usadas
+        estas tecnologias para aumentar a taxa de envolvimento de um jogador com
+        um videojogo, pois existem vários aspetos que o podem irritar e fazer com
+        que não queira continuar a jogar,como oponentes demasiado fortes, que são um
+        fator desmotivante, ou pelo contrário, oponentes demasiado fracos, que tornam a
+        experiência repetitiva e aborrecida sem necessidade de pensamento estratégico.
+        <br> <br>
+        Para isso, através da mistura entre EEG e ET, pode ser feita uma análise dos
+        comportamentos do jogador e do seu estado mental enquanto está envolvido
+        num jogo para que o jogo se modifique e altere a difdiculdade ou outros aspetos
+        e torne a experiência mais divertida e viciante. É sugerido pela equipa que esta
+        alteração para o desfrutar do utilizador seja aplicada apenas quando necessário,
+        pois uma utilização da mesma em demasia pode causar um vício ou dependência
+        no jogo em alguns casos, devido aos níveis de dopamina se encontrarem sempre
+        ao máximo, já que este seria um eventual "jogo perfeito"para o utilizador. 
+        <br> <br>
+        Após alguns testes, a maioria dos jogadores admitiu preferir jogar em ambientes
+        regulados para si do que um jogo constantemente muito desafiante ou
+        muito fácil.</p>
+        <br> <br>
+    <li><h3 id="viralizacao_desta_tecnologia_nos_media" class="subtitle marginnavbar"><i class="fa-solid fa-angles-right"></i> Viralização desta tecnologia nos media</h3></li>
+        <p align="justify" class="text"> <br> Estas tecnologias ainda não são muito usadas, mas já começam a surgir
+            pessoas a criar conteúdo e a desenvolver maneiras criativas da sua utilização para
+            lazer, como por exemplo na plataforma de vídeos em direto chamada Twitch,um
+            canal com nome de Perrikaryal , desenvolveu uma maneira de jogar videojogos
+            multi-jogador com EEG, ET e alguns giroscópios, começando criar conteúdo à
+            volta disso e a ganhar alguma popularidade.
+            <br> <br>
+            Esta <i>live-streamer</i> canadense-britânica, que tirou um doutoramento em psicologia,
+            que está a desenvolver um protótipo de EEG com fins medicinais, achou
+            que seria uma boa ideia tentar completar um videojogo conhecido como um dos
+            mais difíceis de sempre (o <i>Elden Ring</i>, da <i>From Software</i>) com a ajuda do seu
+            protótipo, e os resultados que obteve foram bastante positivos, pois podia
+            usar as duas mãos para a movimentação do seu personagem e curá-lo, e usar
+            as ondas lidas pela EEG para lançar feitiços e atacar, milhares de pessoas estavam
+            lá para a ver a completar o último nível de um dos jogos mais difíceis de
+            sempre. Desde então, ao acrescentar a tecnologia de ET e alguns giroscópios na
+            sua cabeça está a aperfeiçoar a sua interface que a permite jogar exclusivamente
+            com a sua mente, olhos e algumas vezes movendo a cabeça.
+            <br> <br>
+            E como é que funciona? Através de alguns estudos, conseguiu concluir que
+            certos pensamentos diferentes, como por exemplo pensar na palavra "Atacar"ou
+            "Eliminar"criam frequências lidas pela EEG muito semelhantes entre si mas
+            muito distintas de outros conceitos como "Curar"ou "Salvar". Através disto,
+            associou cada uma das ações dos jogos que joga a certos pensamentos. Para
+            mirar as armas e direcionar o personagem, faz uso do ET usando não só os
+            movimentos oculares mas também consegue colocar alguns inputs no seu piscar
+            de olhos e até mesmo olhar abaixo ou acima do monitor onde joga. Para finalizar
+            e corrigir alguns eventuais erros que possam ocorrer, usa uns giroscópios junto
+            à sua cabeça, que podem anular ações não entendidas assim como ajudar com
+            a direção ocular.
+            <br> <br>
+            Ao viralizar desta maneira, mais e mais pessoas começaram a querer experimentar
+            em primeira mão este tipo de maneira de jogar, que para alguns até
+            parece magia. E, dado isto, começa a surgir um muito maior fluxo de dinheiro
+            para esta área, o que não só ajuda no seu desenvolvimento, mas também abre
+            o mercado e torna estas tecnologias mais acessíveis para todos.
+        <br>
+        </p>
+    </ul>
+  </div>
+  </body>
+</html>

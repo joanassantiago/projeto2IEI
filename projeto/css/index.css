@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+main {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.body {
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+	background-size: 100%; 
+  overflow: hidden;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+a.text-as-link{
+  text-decoration: none;
+}
+
+.margin-topbot{
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.navbar-toggler-edit{
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.slider-frame{
+  overflow: hidden;
+  
+  width:30%;
+  margin:0;
+  padding:0;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	z-index: -1;
+ }
+
+.title {
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+}

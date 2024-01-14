@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joana Santiago (119705), Dinis Bernardo (120420)">  
+    <title>Eye Tracking</title>
+    <link rel="icon" type="image/x-icon" href="images/titleicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/eeg&et.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  </head>
+  <body class="style margin-topbot">
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">EEG & ET</a>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+              <div class="vr" style="color: white"></div>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#a9a9a9; margin-left: 10px;" href="about.html">About</a>
+              </li>
+              <li class="nav-item" style="padding-left: 92%">
+                <button class="navbar-toggler-edit" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </li>
+            </ul>
+          </div>      
+          </div>
+        </div>
+      </nav>
+    
+      <nav class="navbar fixed-bottom bg-body-tertiary">
+        <div class="container">
+          <a href='https://www.ua.pt/pt/deti' class="col-md-4 mb-0 text-body-secondary text-as-link">© 2024 UAveiro - Deti</a>
+    
+          <a href="https:www.ua.pt" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img  style="width: 10%;"   src="images/uaWHITE.png">
+          </a>
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="https://github.com/oGaijo" class="nav-link px-2 text-body-secondary">Dinis</a></li>
+            <li class="nav-item"><a class="nav-link px-2 text-body-secondary">|</a></li>
+            <li class="nav-item"><a href="https://github.com/joanassantiago" class="nav-link px-2 text-body-secondary">Joana</a></li>
+          </ul>
+        </div>
+      </nav>
+      </header>
+
+  <main data-bs-theme="dark" style="margin-bottom: 100px;">
+  <div class="offcanvas offcanvas-end text-bg-dark navbar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-body w-100">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eletroencefalografia.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eletroencefalografia</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eletroencefalografia.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#conceito">Conceito</a></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#principios_de_avaliacao">Principios de avaliação</a></li>
+            <li><a class="dropdown-item" href="eletroencefalografia.html#uso_medico">Uso médico</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eyetracking.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eye Tracking</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eyetracking.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eyetracking.html#conceito">Conceito</a></li>
+            <li><a class="dropdown-item" href="eyetracking.html#aplicacoes_do_eye_tracking">Aplicações do ET</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="eeg&et.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">EEG & ET</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="eeg&et.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eeg&et.html#aplicacoes_da_eeg_e_et">Aplicações da EEG e ET</a></li>
+            <li><a class="dropdown-item" href="eeg&et.html#viralizacao_desta_tecnologia_nos_media">Viralização desta tecnologia nos media</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="conclusoes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conclusões</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="conclusoes.html">Topo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="conclusoes.html#resultados">Resultados</a></li>
+            <li><a class="dropdown-item" href="conclusoes.html#analise">Análise</a></li>
+            <li><a class="dropdown-item" href="conclusoes.html#conclusoes">Conclusões</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container body-content">
+    <br>
+    <h1 class="title">Eye Tracking (ET)</h1>
+    <hr>
+    <ul>
+    <br>
+    <li ><h3 class="subtitle marginnavbar" id="conceito"><i class="fa-solid fa-angles-right"></i> Conceito</h3></li>
+      <p align="justify" class="text">O ET, constitui uma tecnologia avançada dedicada à observação e registo minucioso dos movimentos oculares de um individuo. O seu principal objetivo é captar a direção do olhar, analisar os padrões de movimento ocular e na compreensão de como os olhos reagem aos estímulos visuais. Por meio de sensores
+        especializados, o ET possibilita a coleta de dados precisos sobre a posição e movimentos dos olhos. Existem 4 maneiras principais de ser feito o ET, sendo estas:</p>
+        <ol>
+          <li><b>ET "agarrado"aos olhos</b>, em que o utilizador tem de ter uma lente ou outro aparelho que fisicamente regista os movimentos oculares. Este método, embora barato e fácil de aplicar, é o com menor precisão dos apresentados;</li>
+          <li><b>ET através de uma lente</b>, em que o utilizador tem de ter um aparelho,
+           que para além de caro, é pesado, o que dificulta usos
+            de ET por sessões prolongadas. Este método é o com mais precisão dos
+            apresentados;</li>
+          <li><b>ET através de medições de potenciais elétricos</b>, que seriam colocados
+            ao redor dos olhos e detetam a localização da íris e funcionariam
+            mesmo com os olhos fechados ou sem luz. A desvantagem deste método é
+            que é comum haver interferências que dão falsos positivos do movimento
+            ocular;</li>
+          <li><b>ET através de uma câmara em frente ao utilizador</b>, este é o método
+            mais comum e consiste apenas numa câmara que se encontra por cima do
+            que se pretenda que o utilizador observe, e através de filmagens em tempo
+            real dos olhos do utilizador consegue determinar para onde está a olhar, é
+            muito pouco invasivo e distrativo, mas depende fortemente da qualidade
+            da câmara utilizada.</li>
+        </ol>
+    <br>
+    <img src="images/et1.png" class="centerimg"> 
+    <br>
+    <li><h3 id="aplicacoes_do_eye_tracking" class="subtitle marginnavbar"><i class="fa-solid fa-angles-right"></i> Aplicações do Eye Tracking</h3></li>
+      <ul>
+        <li><b>Interfaces de Interatividade Humano-Computador: </b>Esta tecnologia é muito usada em conjunto com computadores para
+          criar interfaces de interação humano-computador. A sua capacidade
+          de rastrear o olhar permite que as interfaces adaptam-se ás ações
+          visuais do usuário, proporcionando uma interação mais intuitiva e
+          eficiente.</li>
+        <li><b>Psicologia e Compreensão Comportamental: </b>Pode ser usado na psicologia, com finais de compreensão dos comportamentos
+          humanos, que representa
+          os pontos para onde o típico humano olha quando está a ler algo,
+          exemplificando como essa tecnologia contribui para a análise detalhada
+          de padrões de leitura e comportamento visual.</li>
+        <li><b>Marketing: </b>No campo de marketing, o ET serve para observar como é que as diferentes
+          audiências-alvo reagem e observam os anúncios que aparecem
+          nos social media, ajudando assim a criar estratégias de publicidade e
+          design de conteúdo.</li>
+        <li><b>Saúde: </b>Com o estudo do comportamento visual, consegue-se obter informações muito importantes acerca do desenvolvimento, padrões de aprendizagem
+          e sinais de doença, como por exemplo o Alzheimer, autismo,
+          depressão, entre muitas outras.</li>
+        <li><b>Trabalho: </b>O ET também pode ser utilizado por empresas para entenderem os
+          processos dos seus trabalhadores, e assim poderem identificar possíveis riscos de segurança, poupando assim muito tempo e melhorando
+          a produtividade.</li>
+        <li><b>Adaptações de Software para Pessoas com Deficiências Motoras: </b> Para além de ser usada para estudos, pode também ser feitas adapta
+          ções de software para pessoas com deficiências motoras para que
+          consigam usar os olhos como um rato num computador, por exemplo.</li>
+      </ul>
+    </ul>
+  </div>
+
+  </body>
